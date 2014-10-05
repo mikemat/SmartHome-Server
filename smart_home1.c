@@ -104,7 +104,7 @@ int main(int argc, char *argv[])
 			led_state = message;
 		    // Here you can add GPIO pin controlling
 		}
-		else if (strncmp("state",buffer,6)==0) {
+		else if (strncmp("state",buffer,5)==0) {
 			message = led_state;	
 		    // Here you can add GPIO pin controlling
 		}
