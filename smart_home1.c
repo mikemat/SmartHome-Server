@@ -1,6 +1,11 @@
 /*
  *  Example of Linux Stream Socket Server for SmartHome client Android application 
- *  The following example allows to test Switch function  
+ *  The following example allows to test:
+ *  - Switch function
+ *  - Temperature reader function
+ *
+ *  This example server program was tested on Olinuxino A20 singleboard, Debian Linux.
+ *
  */
 
 #include <sys/types.h>
@@ -35,7 +40,7 @@ int main(int argc, char *argv[])
 	 ***********************/
 
 	char buffer[MAX];  //for receiving data from client
-	char *message;    //for sending message to client
+	char *message;	   //for sending message to client
 	char *led_state;   //for keeping led state
 	
 	int server_sockfd, client_sockfd; 
@@ -70,6 +75,8 @@ int main(int argc, char *argv[])
 	// The function bzero() sets all values in a buffer to zero.
 	bzero((char *) &server_address, sizeof(server_address));
 	
+	//on the starting server led state is off
+	led_state = "led is off";
 	
 	int listening = 1;
 
@@ -93,6 +100,9 @@ int main(int argc, char *argv[])
 		read(client_sockfd, buffer, MAX-1);
 		printf("Data received from client: %s\n",buffer);
 
+		/*
+		 * Switch function example
+		 */
 		// if data received from client is equal to command ledon
 		if (strncmp("ledon",buffer,5)==0) {
 			message = "led is on";  //response from server to client	
@@ -108,6 +118,22 @@ int main(int argc, char *argv[])
 			message = led_state;	
 		    // Here you can add GPIO pin controlling
 		}
+
+		/*
+		 * Temperature function example
+		 */
+		else if (strncmp("tempin",buffer,6)==0) {
+			message = "24.5°C";
+		    // Here you can add temperature inside reader
+		}
+		else if (strncmp("tempout",buffer,7)==0) {
+			message = "18.2°C";
+			// Here you can add temperature outside reader
+		}
+
+		/*
+		 * Closing Server command
+		 */
 		// Command "server off" from client closing the server
 		else if (strncmp("server off",buffer,10)==0) 
 		{
