@@ -17,7 +17,9 @@ In terminal enter following commands:
 4. Run Server:
 
  `$ ./smart_home1 [Port Number]`
+ 
  for example:
+ 
  `$ ./smart_home1 12345`
 
  In terminal should be displayed information:
@@ -26,7 +28,7 @@ In terminal enter following commands:
 
 5. Now you can check out the Android application
 
- Enter appropriate commands and responses into application settings
+ Enter appropriate text commands and responses into application settings
 
 
 
