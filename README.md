@@ -1,8 +1,8 @@
-### Instruction how to run Server on Linux (Raspberry Pi)
+#### Instruction how to run Server on Linux (Raspberry Pi)
 
 In terminal enter following commands:
 
-1. Download source code from Github: (if you don’t have git install it) 
+1. Download source code from Github:
 
  `$ git clone https://github.com/mikemat/SmartHome-Server.git`
 
