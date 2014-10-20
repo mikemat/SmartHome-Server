@@ -36,5 +36,17 @@ In terminal enter following commands:
  Enter appropriate text commands and responses into application settings
 
 
+==
+###### Additional commands
 
+
+Check if Server process is running: 
+
+`$ sudo netstat -anltp | grep "LISTEN"`
+
+Kill Server process:
+
+`$ sudo killall -9 smart_home1`
+
+<br>
 Remember to forward 12345 port on router when you using public IP.
