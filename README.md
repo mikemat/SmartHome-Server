@@ -35,8 +35,12 @@ In terminal enter following commands:
 
  Enter appropriate text commands and responses into application settings
 
+Network settings and Temperature commands:
 ![](./SettingScreens/settings.png =100x20)
 <img src="https://raw.githubusercontent.com/mikemat/SmartHome-Server/eda8d43080a7dfa88ecf49c76bb09dcddf951e93/SettingScreens/settings.png" alt="Drawing" style="width: 200px;"/>
+
+Switch1 commands
+![](https://github.com/mikemat/SmartHome-Server/blob/master/SettingScreens/switch1.png)
 
 ==
 ###### Additional commands
