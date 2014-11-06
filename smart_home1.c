@@ -1,10 +1,10 @@
 /*
- *  Example of Linux Stream Socket Server for SmartHome client Android application 
+ *  Stream Socket Server example for testing communication with Android SmartHome application 
  *  The following example allows to test:
  *  - Switch function
  *  - Temperature reader function
  *
- *  This example server program was tested on Olinuxino A20 singleboard, Debian Linux.
+ *  This example server program was tested on Olinuxino A20 (Debian) and Raspberry Pi.
  *
  */
 
