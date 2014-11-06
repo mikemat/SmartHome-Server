@@ -1,6 +1,7 @@
 ### SmartHome Server
 
-Source in file `smart_home1.c` is Linux Server program for testing connection with Android application. For testing application you don‘t need to connect any peripherial devices (relays an temperature sensors) to singleboard. 
+Source file `smart_home1.c` is a Linux server program for testing communication with Android SmartHome application. For testing application you don‘t need to connect any peripherial devices (relays an temperature sensors) to singleboard. 
+The server program can be easily modified to read temperature, control lights and devices at home. 
 
 ==
 #### Instruction how to run Server on Linux (Raspberry Pi)
